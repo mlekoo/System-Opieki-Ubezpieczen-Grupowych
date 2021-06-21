@@ -3,9 +3,6 @@ package sample.database.dao;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Created by czoeller on 11.07.16.
- */
 public interface IGenericDAO<E,K> {
     void add(E entity) ;
     E saveOrUpdate(E entity) ;

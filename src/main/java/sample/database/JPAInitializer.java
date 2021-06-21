@@ -4,9 +4,6 @@ import com.google.inject.persist.PersistService;
 
 import javax.inject.Inject;
 
-/**
- * Created by No3x on 02.02.2017.
- */
 public class JPAInitializer {
     @Inject
     JPAInitializer(PersistService service) {

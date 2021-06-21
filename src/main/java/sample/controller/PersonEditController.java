@@ -1,9 +1,5 @@
 package sample.controller;
 
-/**
- * Created by No3x on 01.02.2017.
- */
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

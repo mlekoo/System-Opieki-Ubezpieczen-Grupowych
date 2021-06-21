@@ -10,9 +10,6 @@ import sample.model.Person;
 
 import java.util.Properties;
 
-/**
- * Created by No3x on 02.02.2017.
- */
 public class DatabaseModule extends AbstractModule {
 
     @Override

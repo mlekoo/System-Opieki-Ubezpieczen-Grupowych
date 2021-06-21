@@ -17,9 +17,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-/**
- * Created by czoeller on 11.07.16.
- */
 @SuppressWarnings("unchecked")
 public class GenericDAOImpl<E, ID extends Serializable> implements IGenericDAO<E, ID> {
 

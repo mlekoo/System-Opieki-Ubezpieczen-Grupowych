@@ -10,9 +10,6 @@ import sample.gui.GUIRepresentable;
 
 import javax.persistence.*;
 
-/**
- * Created by No3x on 01.02.2017.
- */
 @Entity
 public class Person implements GUIRepresentable {
     private final IntegerProperty id = new SimpleIntegerProperty(this, "id");

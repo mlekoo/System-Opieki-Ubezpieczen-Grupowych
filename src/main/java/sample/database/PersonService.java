@@ -8,9 +8,6 @@ import javax.inject.Inject;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Created by No3x on 01.02.2017.
- */
 public class PersonService {
 
     private final IGenericDAO<Person, Integer> personDAO;

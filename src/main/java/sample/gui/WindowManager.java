@@ -8,9 +8,6 @@ import javafx.stage.Stage;
 import javax.inject.Inject;
 import java.io.IOException;
 
-/**
- * Created by No3x on 01.02.2017.
- */
 public class WindowManager {
 
     @Inject
@@ -18,7 +15,9 @@ public class WindowManager {
 
     public enum SCENES {
         PERSON_LIST_SCENE("../controller/PersonList.fxml"),
-        PERSON_EDIT_SCENE("../controller/PersonEdit.fxml");
+        PERSON_EDIT_SCENE("../controller/PersonEdit.fxml"),
+        CHOOSE_CONTRACT_SCENE("../controller/ContractList.fxml"),
+        MAIN_SCENE("../controller/MainScene.fxml");
 
         private String sceneName;
 
@@ -47,8 +46,10 @@ public class WindowManager {
         }
         fxmlLoader.getController();
         Stage stage = new Stage();
-        stage.setTitle("Hello World");
-        stage.setScene(new Scene(root, 300, 275));
+        stage.setTitle("System Obslugi Ubezpieczen Grupowych");
+        stage.setScene(new Scene(root, 1080, 720));
+        stage.setMinHeight(400);
+        stage.setMinWidth(500);
         stage.show();
     }
 }

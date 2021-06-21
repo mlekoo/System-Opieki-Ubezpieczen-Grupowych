@@ -17,6 +17,7 @@
 
             <!-- Schema creation -->
             <property name="javax.persistence.schema-generation.database.action" value="create"/>
+            <property name="javax.persistence.schema-generation.create-target" value="create.sql"/>
             <property name="javax.persistence.schema-generation.create-source" value="metadata"/>
         </properties>
     </persistence-unit>

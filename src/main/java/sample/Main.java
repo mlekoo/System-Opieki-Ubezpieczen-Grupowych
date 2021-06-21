@@ -9,9 +9,6 @@ import sample.gui.GUIConfig;
 
 import java.sql.DriverManager;
 
-/**
- * Created by No3x on 01.02.2017.
- */
 public class Main {
 
     public static void main(String[] args) {
@@ -40,5 +37,6 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 }
