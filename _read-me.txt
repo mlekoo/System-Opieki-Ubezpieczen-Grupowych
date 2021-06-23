@@ -1,0 +1,10 @@
+Source files for the lecture related to object-relational mapping using the Hibernate.
+
+By default all necessary libraries will be downloaded as a Maven repository and added to the project (IntelliJ Idea).
+In case of any problems one can utilize the *.java files and manually download required libraries from the Hibernate and H2 web pages. Thus the following procedure could be helpful:
+1. In the hibernate folder, copy all files from "hibernate-release-5.4.1.Final\lib\required" to "/libs". Or a a Maven repository, e.g. "org.hibernate:hibernate-core:5.4.1.Final"
+2. Optionally add the H2 database from the maven repository, e.g. "com.h2database:h2:1.4.199"
+3. In the H2 db folder, copy the file "\h2\bin\h2-1.4.198.jar" to "/libs".
+4. Add the "/libs" folder as a library in the project.
+5. Start the H2 database by executing "\h2\bin\h2.bat". This also starts the H2 console (in a web browser).
+6. Create a new empty database by executing appropriate option from the H2 console icon (the context menu of the icon near a Windows clock). Provide 'mem:db1' as a in-memory db path.

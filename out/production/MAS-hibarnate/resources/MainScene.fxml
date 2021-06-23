@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="720" minWidth="1080" prefHeight="720" prefWidth="1080" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MainSceneController">
+   <children>
+      <SplitPane dividerPositions="0.05153203342618384" minWidth="500" orientation="VERTICAL" style="visibility: true;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxHeight="50" minHeight="30" minWidth="0" prefHeight="40" prefWidth="100.0" style="-fx-background-color: #929292;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" minWidth="300" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER" fillHeight="true" minWidth="300" prefWidth="540" spacing="15">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#menuClicked" prefWidth="140" style="-fx-background-radius: 6; -fx-background-color: #e4e4e4;" text="Menu" />
+                              <MenuButton alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#addClicked" prefWidth="140" style="-fx-background-radius: 6; -fx-background-color: #e4e4e4;" text="Add" textAlignment="CENTER">
+                               <items>
+                                   <MenuItem mnemonicParsing="false" text="Contract" />
+
+                                   <MenuItem mnemonicParsing="false" text="Declaration" />
+                               </items>
+                           </MenuButton>
+                              <Button disable="true" mnemonicParsing="false" prefWidth="180" style="-fx-background-radius: 6; -fx-background-color: #e4e4e4;" text="Admin Panel" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets left="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin></HBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" minWidth="150" prefWidth="540" style="-fx-background-radius: 6; -fx-background-color: #e4e4e4;" text="32142134321" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </HBox.margin></Label>
+                     </children></HBox>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.17936802973977695" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane maxWidth="200" minHeight="0.0" minWidth="120" prefWidth="120" style="-fx-background-color: #929292;">
+                           <children>
+                              <VBox fillWidth="true" prefWidth="190.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <VBox alignment="CENTER" fillWidth="true" prefHeight="103.0" prefWidth="190.0">
+                                       <children>
+                                          <Button onMouseClicked="#contractsClicked" prefHeight="25.0" prefWidth="157.0" style="-fx-background-radius: 6; -fx-background-color: #e4e4e4;" text="CONTRACTS">
+                                             <VBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" fillWidth="true" layoutX="10.0" layoutY="10.0" prefHeight="103.0" prefWidth="190.0">
+                                       <children>
+                                          <Button prefHeight="25.0" prefWidth="163.0" style="-fx-background-radius: 6; -fx-background-color: #e4e4e4;" text="DECLARATIONS">
+                                             <VBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children></VBox>
+                              <ScrollPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="200">
+                                <content>
+                                  <AnchorPane minHeight="200" minWidth="100" prefHeight="200.0" prefWidth="100" />
+                                </content>
+                              </ScrollPane>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <VBox layoutX="76.0" layoutY="39.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
